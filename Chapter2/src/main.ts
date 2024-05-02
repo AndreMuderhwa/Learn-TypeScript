@@ -1,3 +1,4 @@
+//ARRAYS
 let stringArr=['one','hello','guys']
 let guitars=['Stat','Les Paul',5120]
 let mixedData=['Hi',436, true]
@@ -69,5 +70,13 @@ let jp: Guitarist={
 const greetGuitarist=(guitarist : Guitarist)=>{
     return `Hello ${guitarist.name}`
 }
+// console.log(greetGuitarist(jp))
+//ENUMS
+enum Grade {
+    U=12,
+    D,
+    C,
+    B,
+}
 
-console.log(greetGuitarist(jp))
+console.log(Grade.U)

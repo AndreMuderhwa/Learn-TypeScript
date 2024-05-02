@@ -1,4 +1,5 @@
 "use strict";
+//ARRAYS
 let stringArr = ['one', 'hello', 'guys'];
 let guitars = ['Stat', 'Les Paul', 5120];
 let mixedData = ['Hi', 436, true];
@@ -47,4 +48,13 @@ let jp = {
 const greetGuitarist = (guitarist) => {
     return `Hello ${guitarist.name}`;
 };
-console.log(greetGuitarist(jp));
+// console.log(greetGuitarist(jp))
+//ENUMS
+var Grade;
+(function (Grade) {
+    Grade[Grade["U"] = 12] = "U";
+    Grade[Grade["D"] = 13] = "D";
+    Grade[Grade["C"] = 14] = "C";
+    Grade[Grade["B"] = 15] = "B";
+})(Grade || (Grade = {}));
+console.log(Grade.U);
