@@ -102,7 +102,7 @@ const useCartContext=(initCartState: CartStateType)=>{
         return itemA - itemB
     })
 
-    return { dispach, REDUCER_ACTIONS, totalItems, totalPrice, cart}
+    return { dispach: dispach, REDUCER_ACTIONS, totalItems, totalPrice, cart}
 }
 
 export type UseCartContextType=ReturnType<typeof useCartContext>
